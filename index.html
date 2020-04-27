@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Linux Terminal Documentation</title>
+  </head>
+  <body>
+    <main id="main-doc">
+      <nav id="navbar">
+        <header><h1>Linux Terminal Documentation</h1></header>
+        <a href="#Linux_vs_Unix" class="nav-link">Linux vs Unix</a>
+        <a href="#Who_am_I" class="nav-link">Who am I</a>
+        <a href="#Sudo" class="nav-link">Sudo</a>
+        <a href="#Make_a_Directory" class="nav-link">Make a Directory</a>
+        <a href="#Change_Directory" class="nav-link">Change Directory</a>
+        <a href="#Create_Files" class="nav-link">Create Files</a>
+        <a href="#See_Your_Directories_and_Files" class="nav-link"
+          >See Your Directories and Files</a
+        >
+        <a href="#Open_and_Code" class="nav-link">Open and Code</a>
+        <a href="#Remove" class="nav-link">Remove</a>
+        <a href="#Install" class="nav-link">Install</a>
+      </nav>
+      <div class="container">
+        <header id="Linux_Terminal_Documentation">
+          <h1>Linux Terminal Documentation</h1>
+        </header>
+        <section id="Linux_vs_Unix" class="main-section">
+          <header><h2>Linux vs Unix</h2></header>
+          <p>
+            Linux is an Unix clone created by <em>Linus Torvalds</em>. Unix is
+            considered to be the mother of all operating systems. Linux also
+            have a lot of great open source distributions! Ubuntu being the most
+            popular.
+          </p>
+          <h3>These are the 5 most popular distros:</h3>
+          <ol>
+            <li>Ubuntu</li>
+            <li>Elementary OS</li>
+            <li>Linux Mint</li>
+            <li>OpenSUSE</li>
+            <li>Cent OS</li>
+          </ol>
+          <div>
+            <p>
+              Linux has pros and cons compare to other OS like MacOS and
+              Windows.
+            </p>
+            <h3>Pros</h3>
+            <ul>
+              <li>The best security.</li>
+              <li>Fully Customizable.</li>
+              <li>Open Source.</li>
+              <li>Revive older computer systems.</li>
+              <li>Choose when to allow Software Updates</li>
+              <li>Free to use.</li>
+              <li>Large community support</li>
+              <li>
+                Many distros (some look more like a MacOS, some look more like a
+                windows, and others have their own look.
+              </li>
+              <li>Stability</li>
+            </ul>
+            <h3>Cons</h3>
+            <ul>
+              <li>
+                Certain apps that work with Microsoft or Apple don't work on
+                linux
+              </li>
+              <li>There is a learning curve with linux</li>
+              <li>Office software solution is not as powerful</li>
+              <li>
+                You can't run server-side programs that are specifically
+                designed for windows
+              </li>
+              <li>
+                Can Be difficult to install
+              </li>
+            </ul>
+          </div>
+          <p>
+            With Linux, the fastest way of getting around is to use the
+            terminal. Type <code>CTRL + ALT + T</code>, or use the windows key
+            and type terminal to get started.
+          </p>
+        </section>
+        <section id="Who_am_I" class="main-section">
+          <header><h2>Who am I</h2></header>
+          <p>whoami displays the username in the terminal</p>
+          <div class="commands">
+            <code class="black-background">username1234@ubuntu:~$</code>
+          </div>
+          <div class="results">
+            <code class="black-background">username1234</code>
+          </div>
+        </section>
+        <section id="Sudo" class="main-section">
+          <header><h2>Sudo</h2></header>
+          <p>
+            <code>sudo</code> gives you administrative access. sometimes you'll
+            need to type in sudo before you remove something or if your trying
+            to install a software, or even an update.
+          </p>
+        </section>
+        <section id="Make_a_Directory" class="main-section">
+          <header><h2>Make a Directory</h2></header>
+          <p>
+            To get started, let's create a folder. Folders are known as
+            directory, to create a <strong>directory</strong>, we type in mkdir
+            <em>folder-name</em>. mkdir stands for
+            <strong>Make Directory.</strong>
+          </p>
+          <p>
+            <span class="important">Important!</span> For typing in directories
+            or folders, if you want to include a space, you would have to type
+            in
+            <code>folder\ name</code>
+          </p>
+          <p>Type mkdir linux-commands in the terminal.</p>
+          <div class="commands">
+            <code>username1234@ubuntu:~$ mkdir linux-commands</code>
+          </div>
+        </section>
+        <section id="Change_Directory" class="main-section">
+          <header><h2>Change Directory</h2></header>
+          <p>
+            To change your directory we use cd. Lets open up the linux-commands
+            directory. And to go back is <code>cd ..</code>
+          </p>
+          <p>To go to your root directory, you type in <code>cd ~</code></p>
+          <div class="commands">
+            <code>username1234@ubuntu:~$ cd linux-commands</code>
+          </div>
+          <div class="results">
+            <code>username1234@ubuntu:~/linux-commands$ </code>
+          </div>
+        </section>
+        <section id="Create_Files" class="main-section">
+          <header><h2>Create Files</h2></header>
+          <p>To create your files we use <strong>touch</strong>.</p>
+          <code>username1234@ubuntu:~/linux-commands$ touch example1.txt.</code>
+          <p>
+            Lets create two more files. and index.html and a style.css file.
+          </p>
+          <code
+            >username1234@ubuntu:~/linux-commands$ touch index.html
+            style.css</code
+          >
+          <p>
+            You can create as many files and/or directories as you want by
+            adding a space.
+          </p>
+        </section>
+        <section id="See_Your_Directories_and_Files" class="main-section">
+          <header>
+            <h2>See Your Directories and Files</h2>
+          </header>
+          <p>
+            Sometime we want to <strong>list</strong> our files and directory.
+          </p>
+          <div class="commands">
+            <code>username1234@ubuntu:~/linux-commands$ ls</code>
+          </div>
+          <div class="results">
+            <code>example1.txt index.html style.css</code>
+          </div>
+          <p>You can also see hidden files that start with a . with -a.</p>
+          <code>ls -a</code>
+        </section>
+        <section id="Open_and_Code" class="main-section">
+          <header><h2>Open and Code</h2></header>
+          <p>
+            Lets open the text file we created. In order to do that, we use
+            <strong>xdg-open</strong>.
+          </p>
+          <code>xdg-open example1.txt</code>
+          <p>
+            What if we want to open a file with code editor instead? we use
+            <strong>code</strong>. Let's code our HTML.
+          </p>
+          <code>code index.html</code>
+        </section>
+        <section id="Remove" class="main-section">
+          <header><h2>Remove</h2></header>
+          <p>
+            To remove a file you type in <code>rm filename</code> . to rm a
+            directory, you type in <code>rm -r directory</code>.
+          </p>
+          <p>
+            <span class="important">Important!</span> Don't ever type in sudo rm
+            -rf / because that will delete everything! -f stands for force and
+            it will try to delete everything it could. It's one of the most
+            dangerous commands out there.
+          </p>
+        </section>
+        <section id="Install" class="main-section">
+          <header><h2>Install</h2></header>
+          <p>
+            You can install and update software with
+            <code>sudo apt-get software</code>
+          </p>
+          <p>Heres a fun one:</p>
+          <code>sudo apt-get install cmatrix</code>
+          <p>
+            Now type in <code>cmatrix</code> in the terminal and see what
+            happens!
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <!-- FreeCodeCamp CDN-->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
